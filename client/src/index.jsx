@@ -1,3 +1,21 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+// import $ from 'jquery';
 
-ReactDOM.render(<h1>Hello World</h1>,
-  document.getElementById('app'));
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      items: []
+    }
+  }
+
+  render() {
+    return (
+      <h1> Hello Julia </h1>
+    );
+  }
+}
+
+
+ReactDOM.render(<App />, document.getElementById('app'));
